@@ -8,10 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        lightgreeen: "#89b592",
+        lightorange: "#ffbcbc",
+        lightyellow: "#ffdf61",
+        lightpurple: "#c4c8ee",
+        dimgreen: "#c4dac8",
+        dimyellow: "#ffefb0",
+        dimorange: "#fadfca",
+        dimpurple: "#e1e3f6",
+        dark: "#252422",
+        lightgray: "#a3a3a3",
+        dimgray: "#e6e6e6",
+        lightwhite: "#fff8f0",
+      },
+      fontFamily: {
+        sora: "var(--font-sora)",
+      },
+      animation: {
+        "spin-slow": "spin 20s linear infinite",
       },
     },
   },

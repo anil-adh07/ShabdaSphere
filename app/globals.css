@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sora;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  .embla__viewport {
+    @apply overflow-hidden;
+  }
 }
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .embla {
+    --slide-spacing: 2rem;
+    --slide-size: 40%;
+    --slide-height: 19rem;
+  }
+  @media screen and (max-width: 768px) {
+    .embla {
+      --slide-size: 60%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .embla {
+      --slide-size: 100%;
+    }
+  }
+  .embla_testimonials {
+    --slide-spacing: 1rem;
+    --slide-size: 30%;
+    --slide-height: 19rem;
+  }
+  @media screen and (max-width: 768px) {
+    .embla_testimonials {
+      --slide-size: 60%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .embla_testimonials {
+      --slide-size: 100%;
+    }
+  }
+
+  .embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    position: relative;
   }
 }

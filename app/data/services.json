@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "sop-writing1",
+    "title": "SOP Writing 1",
+    "icon": "/images/itsw.svg",
+    "bgcolor": "dimgreen"
+  },
+  {
+    "slug": "sop-writing2",
+    "title": "SOP Writing 2",
+    "icon": "/images/personal.svg",
+    "bgcolor": "dimyellow"
+  },
+  {
+    "slug": "sop-writing3",
+    "title": "SOP Writing 3",
+    "icon": "/images/business.svg",
+    "bgcolor": "dimorange"
+  },
+  {
+    "slug": "sop-writing4",
+    "title": "SOP Writing 4",
+    "icon": "/images/digitalmarketing.svg",
+    "bgcolor": "dimpurple"
+  },
+  {
+    "slug": "sop-writing5",
+    "title": "SOP Writing 5",
+    "icon": "/images/graphic.svg",
+    "bgcolor": "dimorange"
+  },
+  {
+    "slug": "sop-writing6",
+    "title": "SOP Writing 6",
+    "icon": "/images/web.svg",
+    "bgcolor": "dimpurple"
+  },
+  {
+    "slug": "sop-writing7",
+    "title": "SOP Writing 7",
+    "icon": "/images/ui.svg",
+    "bgcolor": "dimgreen"
+  },
+  {
+    "slug": "sop-writing8",
+    "title": "SOP Writing 8",
+    "icon": "/images/ml.svg",
+    "bgcolor": "dimyellow"
+  }
+]
